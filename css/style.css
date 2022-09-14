@@ -1,13 +1,155 @@
-.header {
-  color: red;
-}
-
+@charset "UTF-8";
+/*Обнуление*/
 * {
   padding: 0;
   margin: 0;
   border: 0;
 }
 
-.red {
-  color: red;
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+._container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  ._container {
+    max-width: 970px;
+  }
+  .nav__content {
+    height: 218px;
+  }
+}
+@media (max-width: 992px) {
+  ._container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  ._container {
+    max-width: none;
+  }
+}
+.header__content {
+  max-width: 1183px;
+}
+.header__content .header__menu {
+  height: 253px;
+  background: #ED7E18;
+  margin-bottom: 80px;
+}
+
+.nav__content {
+  max-height: 194px;
+  background: #FFECDA;
+  margin-bottom: 80px;
+}
+
+.wrap__article__content ._article {
+  height: 459px;
+  background: #C0DDF1;
+  margin-bottom: 40px;
+}
+.wrap__article__content ._test {
+  height: 317px;
+  background: #CDF1C0;
+  margin-bottom: 120px;
+}
+
+.wrap__tools__content {
+  max-width: 1172px;
+}
+.wrap__tools__content .tools__block {
+  height: 914px;
+  background: #ED7E18;
+  margin-bottom: 120px;
+}
+
+.table__content {
+  max-width: 1373px;
+}
+.table__content .table__elements {
+  height: 1003px;
+  background: #CDF1C0;
+  margin-bottom: 120px;
+}
+
+.news__content .news__block {
+  height: 484px;
+  background: #371F08;
+  margin-bottom: 120px;
+}
+
+.footer {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 273px;
+  background: #FFECDA;
 }
