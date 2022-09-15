@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,300italic,italic&display=swap&subset=cyrillic-ext");
 /*Обнуление*/
 * {
   padding: 0;
@@ -72,34 +73,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+h1 {
+  font-weight: 600;
+}
+
 ._container {
   max-width: 1170px;
   margin: 0 auto;
+  font-family: "Montserrat";
 }
 
 @media (max-width: 1200px) {
   ._container {
     max-width: 970px;
   }
-  .nav__content {
-    height: 218px;
-  }
 }
 @media (max-width: 992px) {
   ._container {
     max-width: 750px;
+  }
+  .nav__content {
+    max-height: 218px;
   }
 }
 @media (max-width: 767px) {
   ._container {
     max-width: none;
   }
+  .nav__content {
+    max-height: 192px;
+  }
 }
 .header__content {
   max-width: 1183px;
 }
 .header__content .header__menu {
-  height: 253px;
+  max-height: 253px;
   background: #ED7E18;
   margin-bottom: 80px;
 }
@@ -111,12 +120,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrap__article__content ._article {
-  height: 459px;
+  max-height: 459px;
   background: #C0DDF1;
   margin-bottom: 40px;
 }
 .wrap__article__content ._test {
-  height: 317px;
+  max-height: 317px;
   background: #CDF1C0;
   margin-bottom: 120px;
 }
@@ -125,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 1172px;
 }
 .wrap__tools__content .tools__block {
-  height: 914px;
+  max-height: 914px;
   background: #ED7E18;
   margin-bottom: 120px;
 }
@@ -134,14 +143,14 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 1373px;
 }
 .table__content .table__elements {
-  height: 1003px;
+  max-height: 1003px;
   background: #CDF1C0;
   margin-bottom: 120px;
 }
 
 .news__content .news__block {
-  height: 484px;
-  background: #371F08;
+  max-height: 484px;
+  background: #fa8e8e;
   margin-bottom: 120px;
 }
 
@@ -150,6 +159,6 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 273px;
+  max-height: 273px;
   background: #FFECDA;
 }

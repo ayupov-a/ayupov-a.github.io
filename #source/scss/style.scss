@@ -1,7 +1,9 @@
 
 
-//<ИМПОРТ СТИЛЕЙ>=====================================================
+//<ИМПОРТ СТИЛЕЙ>==================================================
 @import "_header";
+@import "_fonts";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,300italic,italic&display=swap&subset=cyrillic-ext");
 
 //<ОБНУЛЕНИЕ>===================================================
 @import "_nullstyle";
@@ -11,23 +13,30 @@ $minWidth: 360px;
 $maxWidth: 1920px;
 $maxWidthContainer: 1170px;
 
+$fontFamily: "Montserrat";
+
+
 $m0a: 0 auto;
 $mb: 120px;
 
 
 //<СТИЛИ>======================================================
 
+//!временно
+h1 {
+    font-weight: 600;
+}
+//!
+
 ._container {
     max-width: $maxWidthContainer;
     margin: $m0a;
+    font-family: $fontFamily;
 }
 
 @media (max-width: 1200px) {
     ._container {
         max-width: 970px;
-    }
-    .nav__content {
-        height: 218px;
     }
 }
 
@@ -35,18 +44,24 @@ $mb: 120px;
     ._container {
         max-width: 750px;
     }
+    .nav__content {
+        max-height: 218px;
+    }
 }
 
 @media (max-width: 767px) {
     ._container {
         max-width: none;
     }
+    .nav__content {
+        max-height: 192px;
+    }
 }
 
 .header__content {
     max-width: 1183px;
     .header__menu {
-        height: 253px;
+        max-height: 253px;
         background: #ED7E18;
         margin-bottom: 80px;
     }
@@ -60,12 +75,12 @@ $mb: 120px;
 
 .wrap__article__content {
     ._article {
-        height: 459px;
+        max-height: 459px;
         background: #C0DDF1;
         margin-bottom: 40px;
     }
     ._test {
-        height: 317px;
+        max-height: 317px;
         background: #CDF1C0;
         margin-bottom: $mb;
     }
@@ -74,7 +89,7 @@ $mb: 120px;
 .wrap__tools__content {
     max-width: 1172px;
     .tools__block {
-        height: 914px;
+        max-height: 914px;
         background: #ED7E18;
         margin-bottom: $mb;
     }
@@ -83,7 +98,7 @@ $mb: 120px;
 .table__content {
     max-width: 1373px;
     .table__elements {
-        height: 1003px;
+        max-height: 1003px;
         background: #CDF1C0;
         margin-bottom: $mb;
     }
@@ -91,8 +106,8 @@ $mb: 120px;
 
 .news__content {
     .news__block {
-        height: 484px;
-        background: #371F08;
+        max-height: 484px;
+        background: #fa8e8e;
         margin-bottom: $mb;
     }
 }
@@ -104,6 +119,6 @@ $mb: 120px;
     display: flex;
     flex-direction: column;
 
-    height: 273px;
+    max-height: 273px;
     background: #FFECDA;
 }
