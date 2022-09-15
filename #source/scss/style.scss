@@ -3,7 +3,7 @@
 //<ИМПОРТ СТИЛЕЙ>==================================================
 @import "_header";
 @import "_fonts";
-@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,300italic,italic&display=swap&subset=cyrillic-ext");
+//@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,300italic,italic&display=swap&subset=cyrillic-ext");
 
 //<ОБНУЛЕНИЕ>===================================================
 @import "_nullstyle";
@@ -58,12 +58,14 @@ h1 {
     }
 }
 
-.header__content {
-    max-width: 1183px;
-    .header__menu {
-        max-height: 253px;
-        background: #ED7E18;
-        margin-bottom: 80px;
+.header {
+    max-width: $maxWidth;
+    background: #ED7E18;
+    .header__content {
+        .header__menu {
+            max-height: 253px;
+            margin-bottom: 80px;
+        }
     }
 }
 
@@ -113,12 +115,5 @@ h1 {
 }
 
 .footer {
-    width: 100%;
-    //min-height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-
-    max-height: 273px;
     background: #FFECDA;
 }
