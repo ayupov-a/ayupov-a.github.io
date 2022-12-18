@@ -1,0 +1,16 @@
+{
+  "name": "ayupov-a/githubio",
+  "description": "Personal portfolio v1",
+  "license": "secret",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Aigiz Ayupov",
+      "email": "aigiz.ayupov1917@outlook.com"
+    }
+  ],
+
+  "require-dev": {
+    "phpunit/phpunit": "^9"
+  }
+}
